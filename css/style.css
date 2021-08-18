@@ -1,0 +1,301 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+#home{
+	background: url(../images/home-hero.svg) no-repeat;
+	background-position:right -10% top 30%;
+}
+#home header{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:20px;
+}
+#home header nav ul{
+	display:flex;
+	align-items:center;
+}
+#home header nav ul li{
+	margin-right: 18px;
+	position: relative;
+}
+#home header nav ul li:last-child{
+	margin-right: 0;
+}
+#home header nav ul li:after{
+	content:'';
+	height:2px;
+	width:100%;
+	position :absolute;
+	background:#160647;
+	top:90%;
+	right:0;
+	transition-duration: .8s;
+	border-radius: 5px;
+	transform: scale(0);
+}
+#home header nav ul li:hover:after{
+	width:100%;
+	transform: scale(.9);
+}
+#home header .right ul{
+	display:flex;
+}
+#home header .right ul li{
+	margin-right: 18px;
+}
+#home header .right ul li:last-child{
+	margin-right: 0;
+}
+#home header .right ul li a.button{
+	padding:10px 20px;
+	background:#ffe4da;
+	color:#ff906a;
+	border-radius: 8px;
+}
+#home .spotlight{
+	padding:80px;
+}
+#home .spotlight .content{
+	width:80%
+}
+#home .spotlight .content h3{
+	font-size: 50px;
+	font-weight: 700;
+	width:50%
+}
+#home .spotlight .content p{
+	font-size: 18px;
+	margin-top: 60px;
+	width:30%;
+	margin-bottom: 100px;
+}
+#home .spotlight .content form{
+	border:1px solid black;
+	width:300px;
+	padding: 15px;
+	display:flex;
+	justify-content: space-between;
+	position:relative;
+	border-radius: 8px;
+}
+#home .spotlight .content form input[type="email"]{
+	width: 70%;
+
+	height:100%;
+}
+#home .spotlight .content form input[type="submit"]{
+	padding:19px 40px ;
+	background:#0056fb;
+	position: absolute;
+	top:-8%;
+	right:-5%;
+	border-radius: 10px;
+
+	color:#fff;
+}
+#features{
+
+}
+#features .logo-trustie{
+	text-align:center;
+	padding-bottom: 80px;
+}
+#features .logo-trustie p{
+	margin-bottom: 34px;
+}
+#features .logo-trustie ul{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+#features .logo-trustie ul li{
+	width:80px;
+	margin-right: 20px;
+}
+#features .logo-trustie ul li img{
+	width:100%;
+}
+#features .uses .flex{
+	margin-top: 80px;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+#features .uses:nth-child(3){
+	background: #f8f8f8;
+}
+#features .uses .flex .left{
+	width: 140%;
+}
+#features .uses .left .flex img{
+	width: 100%;
+}
+#features .uses .flex .right{
+	width: 140%;
+	padding-left: 50px;
+	position: relative;
+	padding-top: 50px;
+}
+#features .uses .flex .right h5{
+	font-size: 38px;
+	font-weight: 600;
+	margin-bottom: 34px;
+}
+#features .uses .flex .right h6{
+	font-size: 18px;
+	margin-bottom: 34px;
+}
+#features .uses .right a.button{
+	padding:15px 20px ;
+	background:#0056fb;
+	border-radius: 10px;
+	font-weight: 600;
+	color: #fff;
+}
+#features .uses .flex .right p{
+	margin-top: 190px;
+	color:rgb(116, 116, 115);
+	font-size: 14px;
+}
+#features .uses .right hr.line{
+	width:60%;
+	position: absolute;
+	bottom:-10%;
+	height:1px;
+	background:rgb(100, 100, 100);
+	bottom:40%;
+}
+#demo{
+
+}
+#demo .top{
+
+}
+#top .top h4{
+
+}
+#demo .bottom{
+
+}
+#demo .bottom ul{
+
+}
+#demo .bottom ul li {
+
+}
+#demo .bottom ul li .contain{
+	width:150px;
+
+}
+#demo .bottom ul li .contain img{
+	width
+}
